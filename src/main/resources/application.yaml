@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo
+  threads:
+    virtual:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,threaddump
+  metrics:
+    tags:
+      application: my-app
